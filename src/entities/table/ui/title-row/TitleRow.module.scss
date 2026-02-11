@@ -1,5 +1,11 @@
 .TitleRow {
   td {
     text-align: center;
+    @media screen and (max-width: 992px) {
+      padding: 10px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 10px;
+    }
   }
 }

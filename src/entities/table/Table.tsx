@@ -12,13 +12,15 @@ interface TableProps {
 
 export const Table: FC<TableProps> = ({ className, data }) => {
   return (
-    <table className={classNames(styles.Table, [className])}>
-      <TitleRow />
-      <tbody>
-        {data.map((item) => {
-          return <RowTable rowData={item} key={item.indicator} />;
-        })}
-      </tbody>
-    </table>
+    <div className={styles.TableContainer}>
+      <table className={classNames(styles.Table, [className])}>
+        <TitleRow />
+        <tbody>
+          {data.map((item) => {
+            return <RowTable rowData={item} key={item.indicator} />;
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };

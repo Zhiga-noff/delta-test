@@ -1,6 +1,22 @@
+.TableContainer {
+  @media screen and (max-width: 420px) {
+    overflow-x: auto; // ← включает горизонтальный скролл
+    -webkit-overflow-scrolling: touch; // ← плавный скролл на iOS
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // опционально
+  }
+}
+
 .Table {
   width: 100%;
   color: #929a9c;
+
+  @media screen and (max-width: 420px) {
+    min-width: 600px; // ← или ширина по содержимому
+    width: auto;
+    border-collapse: collapse;
+  }
 
   tr {
   }
@@ -9,5 +25,12 @@
     background-color: #f6f6f6;
     border: 3.5px solid white;
     padding: 12px 24px;
+    @media screen and (max-width: 992px) {
+      padding: 10px;
+      width: 25%;
+    }
+    @media screen and (max-width: 639px) {
+      padding: 5px 10px;
+    }
   }
 }

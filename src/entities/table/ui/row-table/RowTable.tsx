@@ -28,7 +28,7 @@ export const RowTable: FC<RowTableProps> = ({ className, rowData }) => {
       {showChart && (
         <tr className={classNames(styles.RowTable, [className])}>
           <td colSpan={4}>
-            <HighchartsLine />
+            <HighchartsLine title={rowData.indicator} />
           </td>
         </tr>
       )}

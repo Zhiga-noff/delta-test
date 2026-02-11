@@ -3,12 +3,19 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
+  @media screen and (max-width: 639px) {
+    font-size: 14px;
+  }
 }
 
 .app {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media screen and (max-width: 639px) {
+    padding: 0 10px;
+  }
 
   .now {
     background-color: #f0f8f9;

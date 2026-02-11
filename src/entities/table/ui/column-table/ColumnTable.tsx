@@ -13,13 +13,20 @@ export const ColumnTable: FC<ColumnTableProps> = ({ className, dataColumn, today
   if (typeof dataColumn === 'object' && Array.isArray(dataColumn) === false) {
     return (
       <td
-        className={classNames(styles.ColumnTable, [styles.growth], {
+        className={classNames(styles.ColumnTable, [], {
           [styles.green]: dataColumn.growth > 0,
           [styles.red]: dataColumn.growth < 0,
         })}
       >
-        {separator(dataColumn.value)}
-        <span>{dataColumn.growth}%</span>
+        <div
+          className={classNames(styles.ColumnTable, [styles.growth], {
+            [styles.green]: dataColumn.growth > 0,
+            [styles.red]: dataColumn.growth < 0,
+          })}
+        >
+          {separator(dataColumn.value)}
+          <span>{dataColumn.growth}%</span>
+        </div>
       </td>
     );
   }
