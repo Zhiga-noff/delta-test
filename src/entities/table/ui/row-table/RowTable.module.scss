@@ -1,4 +1,6 @@
 .RowTable {
+  cursor: pointer;
+
   td {
     &:last-child {
       text-align: right;
