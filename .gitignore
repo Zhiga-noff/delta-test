@@ -8,7 +8,6 @@ node_modules
 /.idea/codeStyles/codeStyleConfig.xml
 /.idea/watcherTasks.xml
 /.idea/codeStyles/Project.xml
-/build/
 /.idea/jsLinters/eslint.xml
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/stylesheetLinters/stylelint.xml
