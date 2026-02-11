@@ -1,0 +1,17 @@
+@import 'normalize';
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.app {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .now {
+    background-color: #f0f8f9;
+    text-align: center;
+  }
+}

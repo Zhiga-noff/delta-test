@@ -1,0 +1,30 @@
+.ColumnTable {
+  &.growth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 32px;
+
+    span {
+      color: #659f63;
+    }
+
+    &.green {
+      background-color: #ecf6e7;
+
+      span {
+        color: #659f63;
+        font-weight: 700;
+      }
+    }
+
+    &.red {
+      background-color: #ffe7e3;
+
+      span {
+        color: #ba2523;
+        font-weight: 700;
+      }
+    }
+  }
+}
